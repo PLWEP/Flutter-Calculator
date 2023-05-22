@@ -13,7 +13,7 @@ class CustomOperationButton extends StatelessWidget {
       style: ButtonStyle(
         backgroundColor: MaterialStateProperty.all(Colors.black26),
         shape: MaterialStateProperty.all(
-          RoundedRectangleBorder(
+          const RoundedRectangleBorder(
             borderRadius: BorderRadius.zero,
           ),
         ),
