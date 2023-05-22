@@ -61,7 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void inputOperator(String value) => setState(
         () {
-          if (field1 == "") {
+          if (field1 == "" && field2 != "") {
             field1 = field2;
             operator = value;
             field2 = "";
@@ -126,7 +126,7 @@ class _MyHomePageState extends State<MyHomePage> {
             } else {
               operator = value;
             }
-          } else {
+          } else if (field1 != "" && field2 == "") {
             operator = value;
           }
         },
