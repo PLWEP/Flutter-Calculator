@@ -13,7 +13,7 @@ class CustomNumberButton extends StatelessWidget {
       style: ButtonStyle(
         backgroundColor: MaterialStateProperty.all(Colors.black12),
         shape: MaterialStateProperty.all(
-          RoundedRectangleBorder(
+          const RoundedRectangleBorder(
             borderRadius: BorderRadius.zero,
           ),
         ),
